@@ -9,6 +9,9 @@ header,nav,section,div,footer,main  {
 }
 /** header **/
 .header {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   background-color: #544060;
   color: white;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
@@ -26,15 +29,16 @@ header,nav,section,div,footer,main  {
   font-weight: bold;
   font-family: Georgia, serif;
   font-size: 40px;
-  margin: 0.25em 0.25em;
-  display: flow-root;
+  display: flex;
+  align-items: flex-start;
 }
 .header_subtitle {
+  display: flex;
   font-weight: 200;
   font-family: cursive;
   font-size: 20px;
   font-style: italic;
-  margin: 0.5em 0.25em;
+  align-items: flex-end;
 }
 /* Navigation bar **/
 ul {
@@ -95,7 +99,7 @@ main {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   bottom: 0;
-  height: 40%;
+  height: auto;
   width: 100%;
   color: #e1d7e8;
   padding: 1em;
@@ -116,12 +120,11 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 1em;
+  justify-content: space-around;
   align-items: stretch;
 }
 .proj_pic {
-  width:auto;
+  width: 80%;
   border-radius: 50%;
   height:auto;
 }
